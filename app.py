@@ -31,7 +31,9 @@ def get_travel_time_minutes(origin, destination):
         return None
 
 # ---------- Load model and data ----------
-model = SentenceTransformer('all-MiniLM-L6-v2', device='cpu')
+from sentence_transformers import SentenceTransformer
+model = SentenceTransformer('paraphrase-MiniLM-L3-v2')  # Smaller, CPU-safe
+
 
 df = pd.read_csv('restaurant_data.csv')
 review_texts = df['review'].tolist()
