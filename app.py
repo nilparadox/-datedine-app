@@ -6,7 +6,7 @@ import numpy as np
 import requests
 
 # ---------- Travel Time API ----------
-ORS_API_KEY = "your_openrouteservice_api_key_here"  # Replace with your actual key
+ORS_API_KEY = "eyJvcmciOiI1YjNjZTM1OTc4NTExMTAwMDFjZjYyNDgiLCJpZCI6IjY2MTU2NWY5N2M2YTQyNDI4MWE5ODg1NTdhYmQ2NzBmIiwiaCI6Im11cm11cjY0In0="
 
 def get_travel_time_minutes(origin, destination):
     try:
